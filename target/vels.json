@@ -1,0 +1,375 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Verify user able to login Successfully",
+        "description": "",
+        "id": "velsbusinessclub-api-automation-scripting-using-rest-assured;verify-user-able-to-login-successfully",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2071603100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user should add header with authendication",
+            "match": {
+              "location": "StepDefVels.user_should_add_header_with_authendication()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 165630800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user should give username and password",
+            "match": {
+              "location": "StepDefVels.user_should_give_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4376070300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user should send post request",
+            "match": {
+              "location": "StepDefVels.user_should_send_post_request()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4379500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should verify status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 34
+                }
+              ],
+              "location": "StepDefVels.user_should_verify_status_code_is(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 132774400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should verify response body",
+            "match": {
+              "location": "StepDefVels.user_should_verify_response_body()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 28561300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user print json object",
+            "match": {
+              "location": "StepDefVels.user_print_json_object()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 360700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user should read the message",
+            "match": {
+              "location": "StepDefVels.user_should_read_the_message()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user should check login successfully with assert condition",
+            "match": {
+              "location": "StepDefVels.user_should_check_login_successfully_with_assert_condition()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1785830400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user should print the logtoken",
+            "match": {
+              "location": "StepDefVels.user_should_print_the_logtoken()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Verify user able to AddAddress Successfully",
+        "description": "",
+        "id": "velsbusinessclub-api-automation-scripting-using-rest-assured;verify-user-able-to-addaddress-successfully",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1703700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user should add headers with authendication",
+            "match": {
+              "location": "StepDefVels.userShouldAddHeadersWithAuthendication()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 221700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user should addpayload",
+            "match": {
+              "location": "StepDefVels.userShouldAddpayload()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1325493600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user should send post request with endpoints",
+            "match": {
+              "location": "StepDefVels.userShouldSendPostRequestWithEndpoints()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 60547100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user should read the message and check the addaddress successfully with assert condition",
+            "match": {
+              "location": "StepDefVels.userShouldReadTheMessageAndCheckTheAddaddressSuccessfullyWithAssertCondition()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "Verify user able to UpdateAddress Successfully",
+        "description": "",
+        "id": "velsbusinessclub-api-automation-scripting-using-rest-assured;verify-user-able-to-updateaddress-successfully",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1184200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user should add headers with authendication in update address",
+            "match": {
+              "location": "StepDefVels.userShouldAddHeadersWithAuthendicationInUpdateAddress()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 84300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user should addpayload in update Address",
+            "match": {
+              "location": "StepDefVels.userShouldAddpayloadInUpdateAddress()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 820407700,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user should send put request with endpoints",
+            "match": {
+              "location": "StepDefVels.userShouldSendPutRequestWithEndpoints()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 41828000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user should read the message and check the update address successfully with assert condition",
+            "match": {
+              "location": "StepDefVels.userShouldReadTheMessageAndCheckTheUpdateAddressSuccessfullyWithAssertCondition()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "Verify user able to GetAddress Successfully",
+        "description": "",
+        "id": "velsbusinessclub-api-automation-scripting-using-rest-assured;verify-user-able-to-getaddress-successfully",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1221000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user should add headers with authendication in get address",
+            "match": {
+              "location": "StepDefVels.userShouldAddHeadersWithAuthendicationInGetAddress()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1352083800,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user should send get request with endpoints",
+            "match": {
+              "location": "StepDefVels.userShouldSendGetRequestWithEndpoints()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5481600,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user should verify the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "StepDefVels.userShouldVerifyTheStatusCodeIs(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 44822900,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user should read the message and check the OK with assert condition",
+            "match": {
+              "location": "StepDefVels.userShouldReadTheMessageAndCheckTheOKWithAssertCondition()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 32,
+        "name": "Verify user able to DeleteAddress Successfully",
+        "description": "",
+        "id": "velsbusinessclub-api-automation-scripting-using-rest-assured;verify-user-able-to-deleteaddress-successfully",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 767500,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user should add headers with authendication in delete address",
+            "match": {
+              "location": "StepDefVels.userShouldAddHeadersWithAuthendicationInDeleteAddress()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 44000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user should addpayload in delete Address",
+            "match": {
+              "location": "StepDefVels.userShouldAddpayloadInDeleteAddress()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4082177500,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "user should send delete request with endpoints",
+            "match": {
+              "location": "StepDefVels.userShouldSendDeleteRequestWithEndpoints()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 34689800,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "user should read the message and check the delete address successfully with assert condition",
+            "match": {
+              "location": "StepDefVels.userShouldReadTheMessageAndCheckTheDeleteAddressSuccessfullyWithAssertCondition()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Velsbusinessclub API automation scripting using Rest Assured",
+    "description": "",
+    "id": "velsbusinessclub-api-automation-scripting-using-rest-assured",
+    "keyword": "Feature",
+    "uri": "src/test/resources/vels.feature",
+    "tags": []
+  }
+]

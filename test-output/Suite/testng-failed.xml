@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test">
+    <classes>
+      <class name="api.ApiVelsRunner"/>
+      <class name="com.greens.ReqRes"/>
+      <class name="com.greens.JsonPath"/>
+      <class name="com.sede.Serilalization_Deserilization"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.sede.Serilalization_Deserilization">
+        <methods>
+          <include name="addAddress"/>
+          <include name="updateAddress"/>
+          <include name="Login"/>
+          <include name="deleteAddress"/>
+        </methods>
+      </class> <!-- com.sede.Serilalization_Deserilization -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

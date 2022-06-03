@@ -1,0 +1,20 @@
+{
+"name":"messi",
+"email":"messi@gmail.com",
+"phoneNo":"876543210",
+"studentDetails":[{
+	"firstName":"roney",
+	"course"   :"java",
+	"address"  :"dgl"},{
+		
+		"firstName":"raja",
+	"course"   :"sql",
+	"address"  :"dgl"
+	 },{
+	
+	 "firstName":"inigo",
+	"course"   :"python",
+	"address"  :"dgl"
+
+}]
+}

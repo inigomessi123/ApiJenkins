@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="2403" started-at="2022-06-03T16:01:58Z" finished-at="2022-06-03T16:02:00Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="2403" started-at="2022-06-03T16:01:58Z" finished-at="2022-06-03T16:02:00Z">
+      <class name="api.ApiVelsRunner">
+        <test-method status="PASS" signature="vels()[pri:0, instance:api.ApiVelsRunner@7e0b0338]" name="vels" duration-ms="2359" started-at="2022-06-03T21:31:58Z" finished-at="2022-06-03T21:32:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vels -->
+      </class> <!-- api.ApiVelsRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

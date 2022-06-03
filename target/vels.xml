@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="16.346135">
+<testcase classname="Velsbusinessclub API automation scripting using Rest Assured" name="Verify user able to login Successfully" time="8.571334">
+<system-out><![CDATA[Given user should add header with authendication............................passed
+When user should give username and password.................................passed
+Then user should send post request..........................................passed
+And user should verify status code is 200...................................passed
+Then user should verify response body.......................................passed
+Then user print json object.................................................passed
+And user should read the message............................................passed
+Then user should check login successfully with assert condition.............passed
+Then user should print the logtoken.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Velsbusinessclub API automation scripting using Rest Assured" name="Verify user able to AddAddress Successfully" time="1.388835">
+<system-out><![CDATA[Given user should add headers with authendication...........................passed
+When user should addpayload.................................................passed
+Then user should send post request with endpoints...........................passed
+And user should read the message and check the addaddress successfully with assert condition.passed
+]]></system-out>
+</testcase>
+<testcase classname="Velsbusinessclub API automation scripting using Rest Assured" name="Verify user able to UpdateAddress Successfully" time="0.863912">
+<system-out><![CDATA[Given user should add headers with authendication in update address.........passed
+When user should addpayload in update Address...............................passed
+Then user should send put request with endpoints............................passed
+And user should read the message and check the update address successfully with assert condition.passed
+]]></system-out>
+</testcase>
+<testcase classname="Velsbusinessclub API automation scripting using Rest Assured" name="Verify user able to GetAddress Successfully" time="1.404002">
+<system-out><![CDATA[Given user should add headers with authendication in get address............passed
+When user should send get request with endpoints............................passed
+Then user should verify the status code is 200..............................passed
+And user should read the message and check the OK with assert condition.....passed
+]]></system-out>
+</testcase>
+<testcase classname="Velsbusinessclub API automation scripting using Rest Assured" name="Verify user able to DeleteAddress Successfully" time="4.118052">
+<system-out><![CDATA[Given user should add headers with authendication in delete address.........passed
+When user should addpayload in delete Address...............................passed
+Then user should send delete request with endpoints.........................passed
+And user should read the message and check the delete address successfully with assert condition.passed
+]]></system-out>
+</testcase>
+</testsuite>

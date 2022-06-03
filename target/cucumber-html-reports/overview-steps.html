@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>velsbusinessclub</td>
+      <td>03 Jun 2022, 21:31</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">StepDefVels.userShouldAddHeadersWithAuthendication()</td>
+              <td>1</td>
+              <td class="duration" data-value="1703700">0.001</td>
+              <td class="duration" data-value="1703700">0.001</td>
+              <td class="duration" data-value="1703700">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefVels.userShouldAddHeadersWithAuthendicationInDeleteAddress()</td>
+              <td>1</td>
+              <td class="duration" data-value="767500">0.000</td>
+              <td class="duration" data-value="767500">0.000</td>
+              <td class="duration" data-value="767500">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefVels.userShouldAddHeadersWithAuthendicationInGetAddress()</td>
+              <td>1</td>
+              <td class="duration" data-value="1221000">0.001</td>
+              <td class="duration" data-value="1221000">0.001</td>
+              <td class="duration" data-value="1221000">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefVels.userShouldAddHeadersWithAuthendicationInUpdateAddress()</td>
+              <td>1</td>
+              <td class="duration" data-value="1184200">0.001</td>
+              <td class="duration" data-value="1184200">0.001</td>
+              <td class="duration" data-value="1184200">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefVels.userShouldAddpayload()</td>
+              <td>1</td>
+              <td class="duration" data-value="221700">0.000</td>
+              <td class="duration" data-value="221700">0.000</td>
+              <td class="duration" data-value="221700">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefVels.userShouldAddpayloadInDeleteAddress()</td>
+              <td>1</td>
+              <td class="duration" data-value="44000">0.000</td>
+              <td class="duration" data-value="44000">0.000</td>
+              <td class="duration" data-value="44000">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefVels.userShouldAddpayloadInUpdateAddress()</td>
+              <td>1</td>
+              <td class="duration" data-value="84300">0.000</td>
+              <td class="duration" data-value="84300">0.000</td>
+              <td class="duration" data-value="84300">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefVels.userShouldReadTheMessageAndCheckTheAddaddressSuccessfullyWithAssertCondition()</td>
+              <td>1</td>
+              <td class="duration" data-value="60547100">0.060</td>
+              <td class="duration" data-value="60547100">0.060</td>
+              <td class="duration" data-value="60547100">0.060</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefVels.userShouldReadTheMessageAndCheckTheDeleteAddressSuccessfullyWithAssertCondition()</td>
+              <td>1</td>
+              <td class="duration" data-value="34689800">0.034</td>
+              <td class="duration" data-value="34689800">0.034</td>
+              <td class="duration" data-value="34689800">0.034</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefVels.userShouldReadTheMessageAndCheckTheOKWithAssertCondition()</td>
+              <td>1</td>
+              <td class="duration" data-value="44822900">0.044</td>
+              <td class="duration" data-value="44822900">0.044</td>
+              <td class="duration" data-value="44822900">0.044</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefVels.userShouldReadTheMessageAndCheckTheUpdateAddressSuccessfullyWithAssertCondition()</td>
+              <td>1</td>
+              <td class="duration" data-value="41828000">0.041</td>
+              <td class="duration" data-value="41828000">0.041</td>
+              <td class="duration" data-value="41828000">0.041</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefVels.userShouldSendDeleteRequestWithEndpoints()</td>
+              <td>1</td>
+              <td class="duration" data-value="4082177500">4.082</td>
+              <td class="duration" data-value="4082177500">4.082</td>
+              <td class="duration" data-value="4082177500">4.082</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefVels.userShouldSendGetRequestWithEndpoints()</td>
+              <td>1</td>
+              <td class="duration" data-value="1352083800">1.352</td>
+              <td class="duration" data-value="1352083800">1.352</td>
+              <td class="duration" data-value="1352083800">1.352</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefVels.userShouldSendPostRequestWithEndpoints()</td>
+              <td>1</td>
+              <td class="duration" data-value="1325493600">1.325</td>
+              <td class="duration" data-value="1325493600">1.325</td>
+              <td class="duration" data-value="1325493600">1.325</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefVels.userShouldSendPutRequestWithEndpoints()</td>
+              <td>1</td>
+              <td class="duration" data-value="820407700">0.820</td>
+              <td class="duration" data-value="820407700">0.820</td>
+              <td class="duration" data-value="820407700">0.820</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefVels.userShouldVerifyTheStatusCodeIs(Integer)</td>
+              <td>1</td>
+              <td class="duration" data-value="5481600">0.005</td>
+              <td class="duration" data-value="5481600">0.005</td>
+              <td class="duration" data-value="5481600">0.005</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefVels.user_print_json_object()</td>
+              <td>1</td>
+              <td class="duration" data-value="28561300">0.028</td>
+              <td class="duration" data-value="28561300">0.028</td>
+              <td class="duration" data-value="28561300">0.028</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefVels.user_should_add_header_with_authendication()</td>
+              <td>1</td>
+              <td class="duration" data-value="2071603100">2.071</td>
+              <td class="duration" data-value="2071603100">2.071</td>
+              <td class="duration" data-value="2071603100">2.071</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefVels.user_should_check_login_successfully_with_assert_condition()</td>
+              <td>1</td>
+              <td class="duration" data-value="67100">0.000</td>
+              <td class="duration" data-value="67100">0.000</td>
+              <td class="duration" data-value="67100">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefVels.user_should_give_username_and_password()</td>
+              <td>1</td>
+              <td class="duration" data-value="165630800">0.165</td>
+              <td class="duration" data-value="165630800">0.165</td>
+              <td class="duration" data-value="165630800">0.165</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefVels.user_should_print_the_logtoken()</td>
+              <td>1</td>
+              <td class="duration" data-value="1785830400">1.785</td>
+              <td class="duration" data-value="1785830400">1.785</td>
+              <td class="duration" data-value="1785830400">1.785</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefVels.user_should_read_the_message()</td>
+              <td>1</td>
+              <td class="duration" data-value="360700">0.000</td>
+              <td class="duration" data-value="360700">0.000</td>
+              <td class="duration" data-value="360700">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefVels.user_should_send_post_request()</td>
+              <td>1</td>
+              <td class="duration" data-value="4376070300">4.376</td>
+              <td class="duration" data-value="4376070300">4.376</td>
+              <td class="duration" data-value="4376070300">4.376</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefVels.user_should_verify_response_body()</td>
+              <td>1</td>
+              <td class="duration" data-value="132774400">0.132</td>
+              <td class="duration" data-value="132774400">0.132</td>
+              <td class="duration" data-value="132774400">0.132</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefVels.user_should_verify_status_code_is(int)</td>
+              <td>1</td>
+              <td class="duration" data-value="4379500">0.004</td>
+              <td class="duration" data-value="4379500">0.004</td>
+              <td class="duration" data-value="4379500">0.004</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>25</td>
+            <td>25</td>
+            <td class="duration">0.653</td>
+            <td class="duration">4.376</td>
+            <td class="duration">16.338</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
